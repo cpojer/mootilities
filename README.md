@@ -24,6 +24,10 @@ To build this plugin without external dependencies use
 
 	packager build Mootilities/* +use-only Mootilities > mootilities.js
 
+How to use
+----------
+See the Documentation below or check out the specification to see how the modules work.
+
 Accessor
 --------
 Allows you to abstract getters/setters with high-level lookup/define sugar.
