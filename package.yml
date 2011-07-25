@@ -1,0 +1,24 @@
+name: "Mootilities"
+
+exports: "mootilities.js"
+
+web: "[cpojer.net](http://cpojer.net)"
+demo: http://cpojer.net/PowerTools/
+
+description: "A few very simple and experimental MooTools gems to ease web app development."
+
+license: "[MIT License](http://mootools.net/license.txt)"
+
+copyright: "&copy; [Christoph Pojer](http://cpojer.net/)"
+
+author: "cpojer"
+authors: "[Christoph Pojer](http://cpojer.net)"
+category: Utilities
+tags: [queue, listener, localstorage, storage, accessor, pubsub]
+
+sources:
+  - "Source/Listener.js"
+  - "Source/LocalStorage.js"
+  - "Source/Accessor.js"
+  - "Source/Queue.js"
+  - "Source/Stratcom.js"
