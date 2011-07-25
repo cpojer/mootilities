@@ -67,7 +67,8 @@ Stratcom.notify('page:show', [uri]);
 Queue
 -----
 This is a very simple queue implementation.
-´´´javascript
+
+```javascript
 var queue = new Queue;
 queue.chain(function(){
 	// Do some animation or something
@@ -78,13 +79,13 @@ queue.chain(function(){
 	doSomething();
 	queue.next();
 }).call();
-´´´
+```
 
 Listener
 --------
 If you get tired of writing attach/detach methods in your Classes - this is for you! Note that this utility is likely only useful if your classes are written to manage only one Element.
 
-´´´javascript
+```javascript
 var MenuItem = new Class({
 
 	Implements: Listener
@@ -106,7 +107,7 @@ var MenuItem = new Class({
 		this.detach();
 	}
 });
-´´´
+```
 
 You can detach specific listeners (same arguments as attach), all the listeners (no arguments), one specific listener (type, fn as arguments) or all listeners of one type (type as argument).
 
@@ -116,13 +117,13 @@ LocalStorage
 ------------
 This is a very simple storage wrapper for MooTools. It uses localStorage if available and falls back to Cookie storage. Only use this if you know what you are doing - storing data in Cookies is bad.
 
-´´´javascript
+```javascript
 LocalStorage.set(key, value);
 
 LocalStorage.get(key);
 
 LocalStorage.erase(key);
-´´´
+```
 
 All these methods work with multiple arguments as expected in MooTools.
 
