@@ -17,8 +17,8 @@ category: Utilities
 tags: [queue, listener, localstorage, storage, accessor, pubsub]
 
 sources:
+  - "Source/Accessor.js"
   - "Source/Listener.js"
   - "Source/LocalStorage.js"
-  - "Source/Accessor.js"
   - "Source/Queue.js"
   - "Source/Stratcom.js"
