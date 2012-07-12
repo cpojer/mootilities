@@ -16,7 +16,8 @@ provides: Stratcom
 ...
 */
 
-(function(){
+var Core = require('Core');
+var Events = Core.Events;
 
 var bag = new Events;
 this.Stratcom = {
@@ -37,5 +38,3 @@ this.Stratcom = {
 	}.overloadSetter()
 
 };
-
-})();

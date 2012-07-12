@@ -16,7 +16,9 @@ provides: Listener
 ...
 */
 
-(function(){
+var Core = require('Core');
+var Class = Core.Class;
+var Events = Core.Events;
 
 var property = '$' + String.uniqueID() + '-listener';
 var setup = function(element){
@@ -49,5 +51,3 @@ this.Listener = new Class({
 	}
 
 });
-
-})();

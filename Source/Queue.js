@@ -16,7 +16,9 @@ provides: Queue
 ...
 */
 
-(function(){
+var Core = require('Core');
+var Class = Core.Class;
+var Chain = Core.Chain;
 
 this.Queue = new Class({
 
@@ -39,5 +41,3 @@ this.Queue = new Class({
 	}
 
 });
-
-})();

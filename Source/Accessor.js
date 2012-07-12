@@ -16,14 +16,14 @@ provides: Accessor
 ...
 */
 
-(function(){
+var typeOf = require('Core').typeOf;
 
-this.Accessor = function(singular, plural){
+exports.Accessor = function(singular, plural){
 	if (!singular) singular = '';
 	if (!plural) plural = singular + 's';
 
 	var accessor = {}, matchers = [],
-		define = 'define', lookup = 'lookup', match = 'match', each = 'each';
+		define = 'define', lookup = 'lookup', each = 'each';
 
 	this[define + singular] = function(key, value){
 		if (typeOf(key) == 'regexp') matchers.push({regexp: key, value: value, type: typeOf(value)});
@@ -63,5 +63,3 @@ this.Accessor = function(singular, plural){
 	};
 
 };
-
-})();

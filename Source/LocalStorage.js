@@ -16,18 +16,16 @@ provides: LocalStorage
 ...
 */
 
-(function(){
-
 var storage, set, get, erase;
 if ('localStorage' in this) {
 	storage = this.localStorage;
 	set = function(key, value){
-		storage.setItem(key, JSON.encode(value));
+		storage.setItem(key, JSON.stringify(value));
 		return this;
 	};
 
 	get = function(key){
-		return JSON.decode(storage.getItem(key));
+		return JSON.parse(storage.getItem(key));
 	};
 
 	erase = function(key){
@@ -37,12 +35,12 @@ if ('localStorage' in this) {
 } else {
 	storage = this.Cookie;
 	set = function(key, value){
-		storage.write(key, JSON.encode(value));
+		storage.write(key, JSON.stringify(value));
 		return this;
 	};
 
 	get = function(key){
-		return JSON.decode(storage.read(key));
+		return JSON.parse(storage.read(key));
 	};
 
 	erase = function(key){
@@ -59,5 +57,3 @@ this.LocalStorage = {
 		return this;
 	}
 };
-
-})();
